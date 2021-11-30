@@ -1,36 +1,40 @@
 {
-  "name": "class-26-solution",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
-  "dependencies": {
-    "node-sass": "^6.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-jsonschema-form": "1.8.1",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.3"
-  },
-  "devDependencies": {
-    "@testing-library/react": "^12.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "class-26-solution",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node index.js",
+        "init:config": "sequelize init:config",
+        "db:create": "sequelize db:create",
+        "watch": "nodemon index.js",
+        "test-watch": "jest --watchAll",
+        "test": "jest --coverage --verbose"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    },
+    "dependencies": {
+        "base-64": "^1.0.0",
+        "bcrypt": "^5.0.1",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "jest": "^27.3.1",
+        "jest-cli": "^27.3.1",
+        "jsonwebtoken": "^8.5.1",
+        "node-sass": "^6.0.1",
+        "pg": "^8.7.1",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-jsonschema-form": "1.8.1",
+        "react-router-dom": "5.2.0",
+        "react-scripts": "4.0.3",
+        "sequelize": "^6.8.0",
+        "sequelize-cli": "^6.2.0",
+        "sqlite": "^4.0.23",
+        "sqlite3": "^5.0.2",
+        "supertest": "^6.1.6",
+        "usestate": "^1.1.3"
+    }
 }
