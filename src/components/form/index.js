@@ -16,7 +16,7 @@ function Form(props) {
 	return (
 		<>
 			<form onSubmit={handleSubmit}>
-				<label >
+				<label>
 					<span>URL: </span>
 					<input name='url' type='text' />
 					<button type="submit">GO!</button>
